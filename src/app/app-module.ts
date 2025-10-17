@@ -3,10 +3,20 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing-module';
 import { App } from './app';
+import { Parent } from './components/parent/parent';
+import { Child } from './components/child/child';
+import { Header } from './components/header/header';
+import { Sender } from './components/sender/sender';
+import { Logger } from './components/logger/logger';
 
 @NgModule({
   declarations: [
-    App
+    App,
+    Parent,
+    Child,
+    Header,
+    Sender,
+    Logger
   ],
   imports: [
     BrowserModule,

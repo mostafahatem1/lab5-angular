@@ -1,0 +1,5 @@
+ <h3>Child Component</h3>
+    <p>Received from parent: {{ receivedData }}</p>
+    <p>Shared value: {{ sharedService.getValue() }}</p>
+    <button (click)="sendMessage()">Send Message to Parent</button>
+    <button (click)="updateShared()">Update Shared from Child</button>

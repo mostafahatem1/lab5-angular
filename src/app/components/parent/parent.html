@@ -1,0 +1,7 @@
+<h2>Parent Component</h2>
+    <input [(ngModel)]="username" placeholder="Enter username">
+    <p>Current username: {{ username }}</p>
+    <p>Shared value: {{ sharedService.getValue() }}</p>
+    <button (click)="updateShared()">Update Shared from Parent</button>
+    <app-child [receivedData]="username" (messageEvent)="onMessageReceived($event)"></app-child>
+    <p *ngIf="childMessage">Message from child: {{ childMessage }}</p>
